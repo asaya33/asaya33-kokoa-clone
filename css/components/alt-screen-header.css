@@ -1,0 +1,40 @@
+.alt-header {
+  display: flex;
+  /*justify-content: space-between;*/
+  justify-content: center;
+  align-items: center;
+  padding: var(--horizontal-space);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.alt-header__column {
+  width: 33%;
+}
+
+.alt-header__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/*justify-content: space-between 안하고 fc lc auto로 하는 이유: 
+spacebetween을 쓰면 글자 수에 따라 중앙 정렬이 안 될 수도 있지만
+fc lc auto로 해주는 경우에는 글자 수와 상관 없이 중알 정렬이 된다 
+spacebetween을 써도 크게 상관은 없다*/
+.alt-header__column:first-child {
+  margin-right: auto;
+}
+
+.alt-header__column:nth-child(2) {
+  text-align: center;
+}
+
+.alt-header__column:last-child {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alt-header__column span:last-child {
+  margin-left: 20px;
+}
